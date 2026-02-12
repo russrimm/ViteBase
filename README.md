@@ -88,6 +88,9 @@ This template includes comprehensive GitHub Copilot configuration to enhance you
   - `web-design-reviewer` - Visual inspection tool for identifying and fixing design issues
   - Additional skills for specialized development tasks
 
+### Additional Resources
+For more instructions, skills, and agent files to enhance your GitHub Copilot experience, check out the [Awesome Copilot](https://github.com/github/awesome-copilot) repository.
+
 These configurations help GitHub Copilot provide more accurate, context-aware suggestions that align with your project's architecture and coding standards.
 
 ## License
