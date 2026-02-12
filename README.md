@@ -69,22 +69,26 @@ src/
 └── index.css           # Global styles with Tailwind imports
 ```
 
-## Tailwind CSS v4
+## GitHub Copilot Configuration
 
-This template uses Tailwind CSS v4 with the latest features:
+This template includes comprehensive GitHub Copilot configuration to enhance your AI-assisted development experience:
 
-- Uses `@import "tailwindcss";` directive
-- PostCSS plugin: `@tailwindcss/postcss`
-- Updated gradient syntax: `bg-linear-to-r` instead of `bg-gradient-to-r`
+### Copilot Instructions
+- **`.github/copilot-instructions.md`** - Main configuration file that provides Copilot with project-specific context, coding standards, and best practices for this Vite + React + Tailwind stack.
 
-## Technologies
+### Detailed Instructions
+- **`.github/instructions/`** - Contains detailed instruction files for specific technologies and workflows:
+  - Framework-specific best practices (React, TypeScript, Tailwind CSS, Vite)
+  - CI/CD guidelines (GitHub Actions)
+  - Power Apps code apps development standards
+  - Azure Cosmos DB best practices (if using Azure)
 
-- **React** - UI library
-- **Vite** - Build tool and dev server
-- **TypeScript** - Type-safe JavaScript
-- **Tailwind CSS v4** - Utility-first CSS
-- **ESLint** - Linting utility
-- **Prettier** - Code formatter
+### Skills
+- **`.github/skills/`** - Domain-specific skills that extend Copilot's capabilities:
+  - `web-design-reviewer` - Visual inspection tool for identifying and fixing design issues
+  - Additional skills for specialized development tasks
+
+These configurations help GitHub Copilot provide more accurate, context-aware suggestions that align with your project's architecture and coding standards.
 
 ## License
 
