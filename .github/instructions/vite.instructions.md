@@ -1,18 +1,18 @@
 ---
-description: This rule provides comprehensive best practices, coding standards, and guidelines for developing applications using Vite, covering aspects from code organization and performance to security and testing.
-applyTo: **/*.{js,jsx,ts,tsx,vue,svelte}
+description: "This instruction provides comprehensive best practices, coding standards, and guidelines for developing applications using Vite, covering aspects from code organization and performance to security and testing."
+applyTo: "*.js,*.jsx,*.ts,*.tsx,*.vue,*.svelte"
 ---
-
 - **Introduction:**
   - This document outlines best practices for developing applications using Vite, a fast and opinionated build tool that aims to provide a better development experience.
 
 - **Prerequisites:**
-  - Ensure the most recent LTS version of Node.js and npm are installed.
+  - Ensure Node.js and npm/yarn/pnpm are installed.
+  - Familiarity with JavaScript/TypeScript, HTML, and CSS.
 
 - **Code Organization and Structure:**
   - **Directory Structure:**
     - Adopt a modular structure based on features or components.
-
+    ```
     src/
     ├── components/
     │   ├── Button/
@@ -34,7 +34,7 @@ applyTo: **/*.{js,jsx,ts,tsx,vue,svelte}
     ├── App.tsx
     ├── main.tsx
     └── vite-env.d.ts
-
+    ```
   - **File Naming Conventions:**
     - Use descriptive and consistent names.
     - Component files: `ComponentName.tsx` or `component-name.tsx`.
@@ -46,7 +46,7 @@ applyTo: **/*.{js,jsx,ts,tsx,vue,svelte}
     typescript
     // src/components/Button/index.ts
     export { default as Button } from './Button';
-
+    
   - **Component Architecture:**
     - Favor small, reusable components.
     - Utilize functional components and hooks in React (or equivalent in Vue/Svelte).
@@ -147,49 +147,30 @@ applyTo: **/*.{js,jsx,ts,tsx,vue,svelte}
     - Pin dependencies to specific versions to avoid unexpected issues.
   - **Compatibility Concerns:**
     - Test your application in different browsers and devices.
+    - Use polyfills to support older browsers.
   - **Debugging Strategies:**
     - Use browser developer tools to inspect the DOM, network requests, and console output.
     - Use debugging tools like `debugger` or `console.log`.
-  - **Tailwind CSS v4 Installation:**
-    - **CRITICAL**: Always install BOTH `tailwindcss` and `@tailwindcss/postcss` packages for Tailwind v4.
-    - Required devDependencies:
-      ```json
-      "@tailwindcss/postcss": "^4.0.0",
-      "tailwindcss": "^4.0.0",
-      "postcss": "^8.4.49"
-      ```
-    - Update `postcss.config.cjs` to use the PostCSS plugin:
-      ```js
-      module.exports = {
-        plugins: {
-          '@tailwindcss/postcss': {},
-        },
-      }
-      ```
-    - Import Tailwind in your main CSS file with the v4 directive:
-      ```css
-      @import "tailwindcss";
-      ```
-    - Reference: https://tailwindcss.com/blog/tailwindcss-v4
 
 - **Tooling and Environment:**
   - **Recommended Tools:**
     - VS Code with extensions like ESLint, Prettier, and TypeScript.
-    - Edge DevTools
-    - npm for package management.
+    - Chrome DevTools or Firefox Developer Tools.
+    - npm/yarn/pnpm for package management.
   - **Build Configuration:**
     - Configure Vite using `vite.config.ts` or `vite.config.js`.
     - Customize build options like `outDir`, `assetsDir`, and `rollupOptions`.
   - **Linting and Formatting:**
-    - Use ESLint with recommended rulesets (e.g., `eslint:recommended`, `plugin:react/recommended`).
+    - Use ESLint with recommended instructionsets (e.g., `eslint:recommended`, `plugin:react/recommended`).
     - Use Prettier for code formatting.
     - Configure ESLint and Prettier to work together.
   - **Deployment Best Practices:**
-    - Use environment variables for configuration with a .gitignore file to exclude them and other sensitive files
+    - Deploy to a CDN for optimal performance.
+    - Use environment variables for configuration.
     - Set up proper caching headers.
   - **CI/CD Integration:**
-    - Integrate with Github CI/CD pipeline for automated testing and deployment.
-    - Use tools like GitHub Actions.
+    - Integrate with a CI/CD pipeline for automated testing and deployment.
+    - Use tools like GitHub Actions, GitLab CI, or CircleCI.
 
 - **TypeScript Best Practices (when using TypeScript):**
   - **Strict Type-Checking:**
@@ -205,10 +186,10 @@ applyTo: **/*.{js,jsx,ts,tsx,vue,svelte}
     const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
       return <button onClick={onClick}>{label}</button>;
     };
-
+    
 
 - **ESLint Configuration (Example):**
-  javascript
+  ```javascript
   module.exports = {
     env: {
       browser: true,
@@ -230,14 +211,14 @@ applyTo: **/*.{js,jsx,ts,tsx,vue,svelte}
       sourceType: 'module',
     },
     plugins: ['react', '@typescript-eslint', 'prettier'],
-    rules: {
+    instructions: {
       'prettier/prettier': 'error',
       'react/react-in-jsx-scope': 'off',
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
     },
   };
-
+  ```
 
 - **Conclusion:**
   - Following these best practices will help you build efficient, maintainable, and secure applications with Vite.  Continuously review and update your practices as the library and ecosystem evolve.
