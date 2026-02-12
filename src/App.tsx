@@ -12,13 +12,15 @@ function App() {
     {
       id: 2,
       title: 'Download Node.js LTS',
-      description: 'Download the Long-Term Support (LTS) version of Node.js for stable development.',
+      description:
+        'Download the Long-Term Support (LTS) version of Node.js for stable development.',
       link: 'https://nodejs.org/',
     },
     {
       id: 3,
       title: 'Download Git',
-      description: 'Download and install Git for version control and repository management.',
+      description:
+        'Download and install Git for version control and repository management.',
       link: 'https://git-scm.com/',
     },
   ]
@@ -44,8 +46,12 @@ function App() {
                   {step.id}
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-black text-gray-900 mb-3">{step.title}</h2>
-                  <p className="text-gray-700 mb-6 text-lg">{step.description}</p>
+                  <h2 className="text-2xl font-black text-gray-900 mb-3">
+                    {step.title}
+                  </h2>
+                  <p className="text-gray-700 mb-6 text-lg">
+                    {step.description}
+                  </p>
                   <a
                     href={step.link}
                     target="_blank"
