@@ -52,19 +52,6 @@ Build for production:
 npm run build
 ```
 
-Preview production build:
-
-```bash
-npm run preview
-```
-
-### Lint
-
-Run ESLint:
-
-```bash
-npm run lint
-```
 
 ## Project Structure
 
