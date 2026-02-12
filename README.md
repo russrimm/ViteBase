@@ -15,16 +15,16 @@ A modern starter template for building React applications with Vite, TypeScript,
 
 ### Prerequisites
 
-- Visual Studio Code
-- Node.js (LTS version recommended)
-- Git
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Node.js LTS](https://nodejs.org/) (LTS version recommended)
+- [Git](https://git-scm.com/)
 
 ### Installation
 
 Clone the repository to your machine:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/russrimm/ViteBase.git
 cd ViteBase
 ```
 
