@@ -21,6 +21,8 @@ A modern starter template for building React applications with Vite, TypeScript,
 
 ### Installation
 
+Open Visual Studio Code. Once open, go to **Terminal** → **New Terminal** to open a new terminal window.
+
 Clone the repository to your machine:
 
 ```bash
